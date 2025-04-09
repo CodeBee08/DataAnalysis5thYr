@@ -1,5 +1,6 @@
 import plotly.express as px
 import pandas as pd
+from values import cleaned_csv_file
 
 mapping = {
     0: 'Typical angina',
@@ -9,7 +10,6 @@ mapping = {
 }  
 
 def count_hd_by_cp():
-    cleaned_csv_file = '/Users/poornima/Desktop/Workspace/DA/Data/heart_cleaned.csv'
     df = pd.read_csv(cleaned_csv_file)
     df_bar = df.groupby('cp')['target'].value_counts().unstack().fillna(0)
     df_bar.columns = ['Chest Pain Type', 'No Heart Disease Count', 'Heart Disease Count']

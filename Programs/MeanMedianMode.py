@@ -1,5 +1,6 @@
 import pandas as pd
-cleaned_csv_file = '/Users/poornima/Desktop/Workspace/DA/Data/heart_cleaned.csv'
+from values import cleaned_csv_file
+
 df = pd.read_csv(cleaned_csv_file)
 #print(df.to_string())
 chest_pain_types = ('Typical Angina', 'Atypical Angina', 'Non-Anginal Pain', 'Asymptomatic')

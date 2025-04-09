@@ -1,8 +1,8 @@
 import plotly.graph_objects as go
 import pandas as pd
+from values import cleaned_csv_file
 
 def thalach_and_chol_for_age():
-    cleaned_csv_file = '/Users/poornima/Desktop/Workspace/DA/Data/heart_cleaned.csv'
     df = pd.read_csv(cleaned_csv_file)
     
     df_thalch = df.groupby('age')['thalach'].mean().reset_index()

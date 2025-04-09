@@ -1,13 +1,13 @@
 # 8.2.1	Counting Values 
 import plotly.express as px
 import pandas as pd
+from values import cleaned_csv_file
 
 mapping = {
     0: 'No Heart Disease',
     1: 'Heart Disease'
 }
 
-cleaned_csv_file = '/Users/poornima/Desktop/Workspace/DA/Data/heart_cleaned.csv'
 df = pd.read_csv(cleaned_csv_file)
 
 # Function to count occurrences

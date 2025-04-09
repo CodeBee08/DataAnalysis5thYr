@@ -1,8 +1,8 @@
 import plotly.graph_objects as go
 import pandas as pd
+from values import cleaned_csv_file
 
 def trestbps_chol_correlation():
-    cleaned_csv_file = '/Users/poornima/Desktop/Workspace/DA/Data/heart_cleaned.csv'
     df = pd.read_csv(cleaned_csv_file)
     
     fig = go.Figure() # Creates an 'empty’ canvas for graph

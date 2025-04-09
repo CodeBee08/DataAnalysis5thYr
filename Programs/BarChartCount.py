@@ -1,7 +1,7 @@
 import plotly.express as px
 import pandas as pd
+from values import cleaned_csv_file
 
-cleaned_csv_file = '/Users/poornima/Desktop/Workspace/DA/Data/heart_cleaned.csv'
 df = pd.read_csv(cleaned_csv_file)
 mapping = {
     0: 'Typical angina',
